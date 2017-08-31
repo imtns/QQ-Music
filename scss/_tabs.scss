@@ -1,0 +1,31 @@
+.tabs {
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    position: relative;
+    background-color: white;
+    a {
+        flex: 1;
+        text-decoration: none;
+        overflow: hidden;
+        text-align: center;
+        position: relative;
+        -webkit-box-sizing: border-box;
+        color: rgba(0, 0, 0, .6);
+        &.active {
+            color: $tabscolor;
+            &:after {
+                content: "";
+                position: absolute;
+                background: $tabscolor;
+                bottom: 0px;
+                left: 0;
+                right: 0;
+                height: 2px;
+                display: block;
+            }
+        }
+    }
+}

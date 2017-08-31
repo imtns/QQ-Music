@@ -1,0 +1,14 @@
+@import 'var';
+@import 'reset';
+@import 'header';
+@import 'tabs'; 
+@import 'slider';
+body{
+    background-color:$body_bgcolor;
+    color:$body_fontcolor; 
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-user-select: none;
+}
+.hide{
+    display:none; 
+}

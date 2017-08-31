@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <div class='wrap'>
+        <header>
+            <div class="logo"></div>
+            <a href="#">下载APP</a>
+        </header>
+        <div class='tabs'>
+            <a href="javascript:;" class="active" data-role='tab' data-view='reccommend-view'>推荐</a>
+            <a href="javascript:;" data-role='tab' data-view='rank-view'>排行榜</a>
+            <a href="javascript:;" data-role='tab' data-view='search-view'>搜索</a>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="content">
+            <div id='reccommend-view'>
+                推荐
+            </div>
+            <div class="hide" id='rank-view'>
+                排行榜
+            </div>
+            <div class="hide" id='search-view'>
+                搜索
+            </div>
+        </div>
+    </div>
+    <script src="scripts/slider.js"></script>
+    <script src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.min.js"></script>
+    <script src="scripts/tabs.js"></script>
+    <script src="scripts/index.js"></script>
+
+</body>
+
+</html>

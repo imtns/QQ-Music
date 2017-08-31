@@ -1,0 +1,19 @@
+{
+  "name": "qqmusic",
+  "version": "1.0.0",
+  "description": "JS原生-QQ音乐手机端",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imtns/QQ-Music.git"
+  },
+  "author": "Jason",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imtns/QQ-Music/issues"
+  },
+  "homepage": "https://github.com/imtns/QQ-Music#readme"
+}
