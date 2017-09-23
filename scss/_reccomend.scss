@@ -1,0 +1,83 @@
+#reccommend-view {
+    margin: 0 10px 0;
+    .radioBox,.hotSongBox {
+        margin-bottom:8px;
+        h2 {
+            font-size: 16px;
+            color: #000;
+            margin-bottom: 11px;
+            font-weight: normal;
+        }
+        .list {
+            display: flex;
+           flex-flow: row wrap;
+           flex-direction: row;
+            .item {
+                background: white;
+                position: relative;
+                flex:1;
+                flex-basis:45%;
+                margin-right:8px; 
+                min-width: 0;  /*这块遇见个坑~不加这句flex属性的div不识别white-space:nowrap这个。。就是歌曲名称超出长度...*/
+                margin-bottom:10px;
+                &:nth-child(even){
+                    margin-right:0;
+                }
+                .media {
+                    position: relative;
+                    margin-bottom: 5px;
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+                    .icon {
+                        background-image: url(https://y.gtimg.cn/mediastyle/mobile/yqq_v5/img/list_sprite.png?max_age=19830212&d=20151105145423);
+                        background-size: 24px 60px;
+                        background-repeat: no-repeat;
+                        position: absolute;
+                    }
+                    .icon_play {
+                        width: 24px;
+                        height: 24px;
+                        background-position: 0 0;
+                        bottom: 5px;
+                        right: 5px;
+                    }
+                }
+                .songInfo{
+                    color:#000;
+                    padding:0 7px 5px;
+                    .info,.songDesc{
+                        font-size: 14px;
+                        text-overflow: ellipsis; 
+                        font-weight: normal;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+                    .info{
+                        line-height: 18px;
+                        height: 36px;
+                    }
+                    .singer{
+                        font-size:12px;
+                        font-weight: normal;  
+                        text-overflow: ellipsis;  
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+    .list_more{
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        a{
+            display: inline-block;
+            padding:0 10px;
+            font-size: 14px;
+            color:$hotsong_listmore;
+        }
+    }
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font: 12px/1.5 "hiragino sans gb",arial;
   background-color: white;
@@ -67,10 +68,82 @@ header {
         height: 2px;
         display: block; }
 
-.swiper-pagination-bullet {
-  background: white;
-  width: 6px;
-  height: 6px; }
+.swiper-container {
+  margin-bottom: 14px;
+  position: relative; }
+  .swiper-container .swiper-pagination-bullet {
+    background: white;
+    width: 6px;
+    height: 6px; }
+
+#reccommend-view {
+  margin: 0 10px 0; }
+  #reccommend-view .radioBox, #reccommend-view .hotSongBox {
+    margin-bottom: 8px; }
+    #reccommend-view .radioBox h2, #reccommend-view .hotSongBox h2 {
+      font-size: 16px;
+      color: #000;
+      margin-bottom: 11px;
+      font-weight: normal; }
+    #reccommend-view .radioBox .list, #reccommend-view .hotSongBox .list {
+      display: flex;
+      flex-flow: row wrap;
+      flex-direction: row; }
+      #reccommend-view .radioBox .list .item, #reccommend-view .hotSongBox .list .item {
+        background: white;
+        position: relative;
+        flex: 1;
+        flex-basis: 45%;
+        margin-right: 8px;
+        min-width: 0;
+        /*这块遇见个坑~不加这句flex属性的div不识别white-space:nowrap这个。。就是歌曲名称超出长度...*/
+        margin-bottom: 10px; }
+        #reccommend-view .radioBox .list .item:nth-child(even), #reccommend-view .hotSongBox .list .item:nth-child(even) {
+          margin-right: 0; }
+        #reccommend-view .radioBox .list .item .media, #reccommend-view .hotSongBox .list .item .media {
+          position: relative;
+          margin-bottom: 5px; }
+          #reccommend-view .radioBox .list .item .media img, #reccommend-view .hotSongBox .list .item .media img {
+            display: block;
+            width: 100%; }
+          #reccommend-view .radioBox .list .item .media .icon, #reccommend-view .hotSongBox .list .item .media .icon {
+            background-image: url(https://y.gtimg.cn/mediastyle/mobile/yqq_v5/img/list_sprite.png?max_age=19830212&d=20151105145423);
+            background-size: 24px 60px;
+            background-repeat: no-repeat;
+            position: absolute; }
+          #reccommend-view .radioBox .list .item .media .icon_play, #reccommend-view .hotSongBox .list .item .media .icon_play {
+            width: 24px;
+            height: 24px;
+            background-position: 0 0;
+            bottom: 5px;
+            right: 5px; }
+        #reccommend-view .radioBox .list .item .songInfo, #reccommend-view .hotSongBox .list .item .songInfo {
+          color: #000;
+          padding: 0 7px 5px; }
+          #reccommend-view .radioBox .list .item .songInfo .info, #reccommend-view .radioBox .list .item .songInfo .songDesc, #reccommend-view .hotSongBox .list .item .songInfo .info, #reccommend-view .hotSongBox .list .item .songInfo .songDesc {
+            font-size: 14px;
+            text-overflow: ellipsis;
+            font-weight: normal;
+            overflow: hidden;
+            white-space: nowrap; }
+          #reccommend-view .radioBox .list .item .songInfo .info, #reccommend-view .hotSongBox .list .item .songInfo .info {
+            line-height: 18px;
+            height: 36px; }
+          #reccommend-view .radioBox .list .item .songInfo .singer, #reccommend-view .hotSongBox .list .item .songInfo .singer {
+            font-size: 12px;
+            font-weight: normal;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap; }
+  #reccommend-view .list_more {
+    height: 40px;
+    line-height: 40px;
+    text-align: center; }
+    #reccommend-view .list_more a {
+      display: inline-block;
+      padding: 0 10px;
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.6); }
 
 body {
   background-color: #f4f4f4;

@@ -7,12 +7,10 @@
             tabs.classList.remove('active');
         });
         target.classList.add('active');
-        
         Array.from(document.querySelector('.content').children).forEach(child=>{
             child.classList.add('hide');
             if(target.dataset.view == child.id)
                 child.classList.remove('hide');  
         });
-
     });
 })()
